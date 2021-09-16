@@ -11,13 +11,14 @@ import { reducers } from './reducers'
 
 const store = createStore(reducers, applyMiddleware(thunk))
 
+const root: any = document.getElementById('portalRoot')
 ReactDOM.render(
     <Provider store={store}>
         {/* <React.StrictMode> ant D报错，暂时报错 */}
         <App />
         {/* </React.StrictMode> */}
     </Provider>,
-    document.getElementById('portalRoot')
+    root
 );
 
 // If you want to start measuring performance in your app, pass a function

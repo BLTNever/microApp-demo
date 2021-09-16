@@ -14,7 +14,7 @@ const Routers = (props: any) => {
         const { route, } = menu
 
         return <Route path={`/${route}`} key={route}>
-            <MicroApp route={route} url={''} />
+            <MicroApp route={route} url={''} key={route} />
         </Route>
     }
 

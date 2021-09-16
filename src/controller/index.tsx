@@ -23,7 +23,7 @@ const MicroApp = (props: IProps) => {
     const [loading, { setTrue, setFalse }] = useBoolean(false)
 
     const history = useHistory()
-
+    console.log('route>>>', route)
     const info = {
         subApp: route
     }
@@ -32,7 +32,7 @@ const MicroApp = (props: IProps) => {
      * @param param
      */
     const handleExtends = (param: any) => {
-       
+
     }
     const handleJump = (link: string) => {
         if (!link?.length) return
@@ -79,21 +79,27 @@ const MicroApp = (props: IProps) => {
     // }, [])
 
     return (
-        <div id="micro-controller">
-            <Spin spinning={loading} size="large">
-                <micro-app name={route}
-                    url={'http://localhost:3002'}
-                    baseroute={`/${route}`}
-                    // baseroute={route}
-                    data={info}
-                    onDataChange={listenData}
-                    onCreated={() => setTrue()}
-                    onMounted={() => setFalse()}
-                    onError={() => setFalse()}
-                ></micro-app>
-            </Spin>
-        </div>
+        // <div id="micro-controller">
+        //     <Spin spinning={loading} size="large">
+        <micro-app name={route}
+            key={route}
+            url={'http://localhost:3004'}
+            baseroute={`/${route}`}
+            // baseroute={route}
+            data={info}
+            onDataChange={listenData}
+            // onCreated={() => setTrue()}
+            // onMounted={() => setFalse()}
+            // onError={() => setFalse()}
+            onCreated={() => console.log('micro-app元素被创建')}
+            onBeforemount={() => console.log('即将被渲染')}
+            onMounted={() => console.log('已经渲染完成')}
+            onUnmount={() => console.log('被卸载')}
+            onError={() => console.log('渲染出错')}
+        ></micro-app>
+        //     </Spin>
+        // </div>
     )
 }
 
-export default memo(MicroApp)
+export default (MicroApp)
