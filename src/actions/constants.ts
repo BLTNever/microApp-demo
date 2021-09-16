@@ -1,0 +1,1 @@
+export const DISPATCH_MENU = 'DISPATCH_MENU'

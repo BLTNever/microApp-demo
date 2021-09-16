@@ -1,0 +1,67 @@
+#portal-app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F6F6FF;
+    #protal-body {
+        padding: 10px 14px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #F6F6FF !important;
+    }
+    #portal-content {
+        position: relative;
+        // margin: 12px;
+        box-sizing: border-box;
+        background-color: #F6F6FF;
+        overflow: scroll;
+    }
+
+    #layout-header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 54px;
+        background: #444;
+        padding: 0 20px 0 0;
+        width: 100%;
+
+        &>div {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .left {
+            height: 100%;
+            overflow: hidden;
+            flex: 1;
+
+
+        }
+
+        .right {
+            .screen-full {
+                font-size: 14px;
+                cursor: pointer;
+                transition: color .3s;
+                padding: 10px;
+                color: #fff;
+            }
+        }
+    }
+
+
+}
+
+#layout-nav {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    // border: 1px solid red;
+}
