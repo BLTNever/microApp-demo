@@ -1540,10 +1540,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@micro-zoe/micro-app@^0.3.3":
-  version "0.3.3"
-  resolved "http://nexus.ypsx-internal.com/repository/npm-group/@micro-zoe/micro-app/-/micro-app-0.3.3.tgz#756ff90aeb455c0ab9f8f3a932c06e2bd9ee3c1b"
-  integrity sha1-dW/5CutFXAq5+POpMsBuK9nuPBs=
+"@micro-zoe/micro-app@^0.4.0":
+  version "0.4.0"
+  resolved "http://nexus.ypsx-internal.com/repository/npm-group/@micro-zoe/micro-app/-/micro-app-0.4.0.tgz#86c561af2d08373ada713baf7a1e2ba9eaf5f2c4"
+  integrity sha1-hsVhry0INzracTuveh4rqer18sQ=
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

@@ -79,11 +79,10 @@ const MicroApp = (props: IProps) => {
     // }, [])
 
     return (
-        // <div id="micro-controller">
-        //     <Spin spinning={loading} size="large">
+
         <micro-app name={route}
             key={route}
-            url={'http://localhost:3004'}
+            url={'http://localhost:3005'}
             baseroute={`/${route}`}
             // baseroute={route}
             data={info}
@@ -97,8 +96,7 @@ const MicroApp = (props: IProps) => {
             onUnmount={() => console.log('被卸载')}
             onError={() => console.log('渲染出错')}
         ></micro-app>
-        //     </Spin>
-        // </div>
+      
     )
 }
 
